@@ -26,3 +26,6 @@ o.bind("SUPER + M", "Minimize focused window", "exec qs -p /usr/share/omarchy/sh
 -- Restore longest-parked window (FIFO)
 hl.unbind("SUPER + SHIFT + M")
 o.bind("SUPER + SHIFT + M", "Restore oldest minimized", "exec qs -p /usr/share/omarchy/shell ipc call omadock restoreLast")
+
+-- Toggle OmaConnect By @jitendradara12
+o.bind("SUPER + SHIFT + ALT+ C", "Toggle OmaConnect", "omarchy-shell shell toggle omaconnect")
