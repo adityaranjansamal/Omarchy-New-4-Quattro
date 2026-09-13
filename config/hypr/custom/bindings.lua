@@ -16,7 +16,7 @@ o.bind("SUPER + Q", "Close window mac os style", hl.dsp.window.close())
 -- Close Active Window by ALT + F4 more like Windows
 o.bind("ALT + F4", "Close window traditional", hl.dsp.window.close())
 
--- omadock config
+-- omadock config by @thepathless
 -- Toggle Dock Visibility
 o.bind("SUPER + D", "Toggle Omadock", "exec qs -p /usr/share/omarchy/shell ipc call omadock toggleVisibility")
 
@@ -29,3 +29,6 @@ o.bind("SUPER + SHIFT + M", "Restore oldest minimized", "exec qs -p /usr/share/o
 
 -- Toggle OmaConnect By @jitendradara12
 o.bind("SUPER + SHIFT + ALT+ C", "Toggle OmaConnect", "omarchy-shell shell toggle omaconnect")
+
+-- Toggle Spotlight By @maajix
+o.bind("ALT + SPACE", "Spotlight", "omarchy-shell shell toggle io.github.maajix.spotlight '{}'")
