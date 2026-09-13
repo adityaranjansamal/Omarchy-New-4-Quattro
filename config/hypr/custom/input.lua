@@ -4,7 +4,7 @@
 hl.config({
   input = {
     -- Determines whether cursor movement changes the focused window
-    follow_mouse = 1,
+    follow_mouse = 0,
 
     -- Selects the libinput pointer acceleration profile
     accel_profile = "adaptive",
@@ -13,6 +13,14 @@ hl.config({
     sensitivity = 1,
   },
 })
+
+-- Fix default apps selection menu in nautilus
+
+--  hl.config({
+--    cursor = {
+--        no_warps = true,
+--    },
+--})
 
 -- Per-device input configuration
 hl.device({
