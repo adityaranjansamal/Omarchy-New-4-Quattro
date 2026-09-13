@@ -1,0 +1,13 @@
+[Unit]
+Description=Unlock User Keyring via Root File
+# Wait until the user session is theoretically ready
+After=user-runtime-dir@1000.service
+Requires=user-runtime-dir@1000.service
+
+[Service]
+Type=oneshot
+ExecStart=/usr/local/sbin/unlock-keyring-secure.sh
+User=root
+
+[Install]
+WantedBy=multi-user.target
