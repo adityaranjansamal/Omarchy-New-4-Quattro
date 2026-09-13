@@ -1,0 +1,3 @@
+# Add the file in /etc/udev/rules.d/81-uvcvideo.rules location
+# Set power line frequency to 50 Hz
+ACTION=="add", SUBSYSTEM=="video4linux", DRIVERS=="uvcvideo", RUN+="/usr/bin/v4l2-ctl -d /dev/video0 --set-ctrl=power_line_frequency=1"
